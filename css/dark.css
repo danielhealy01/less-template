@@ -7,6 +7,8 @@
     --dark: #05131f;
     --medium: #2C394B;
     --accent: #334756;
+    --gradient: linear-gradient(to right, #05131f, #071b2c);
+    --crazyGradient: linear-gradient(to right, #05131f, #a1d0f9);
   }
   body.dark-mode {
     background-color: var(--dark);

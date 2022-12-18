@@ -189,6 +189,7 @@
     justify-content: space-between;
     align-items: flex-start;
     width: 98%;
+    gap: 0.625em;
   }
   .services .card {
     margin: 0;
