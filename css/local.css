@@ -58,8 +58,8 @@
     width: 100%;
     background: var(--primary);
     opacity: 1;
-    top: 2.5em;
-    left: -2.5em;
+    top: 1.25em;
+    left: -1.25em;
   }
   #sidebyside .image-box:after {
     content: '';
@@ -227,7 +227,9 @@
   }
   #sidebyside-reverse .image-box:before {
     left: auto;
-    right: -2.5em;
+    right: -1.25em;
+    top: -1.25em;
+    bottom: auto;
   }
   #sidebyside-reverse .image-box:after {
     right: auto;
