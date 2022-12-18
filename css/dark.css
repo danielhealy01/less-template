@@ -8,10 +8,11 @@
     --medium: #2C394B;
     --accent: #334756;
     --gradient: linear-gradient(to right, #05131f, #071b2c);
+    --bodyGradient: linear-gradient(to bottom, #071b2c, #05131f);
     --crazyGradient: linear-gradient(to right, #05131f, #a1d0f9);
   }
   body.dark-mode {
-    background-color: var(--dark);
+    background: var(--bodyGradient);
   }
   body.dark-mode p,
   body.dark-mode li,
