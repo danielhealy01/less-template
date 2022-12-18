@@ -61,6 +61,18 @@
     top: 1.25em;
     left: -1.25em;
   }
+  @keyframes flickerAnimation {
+    /* flame pulses */
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.4;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   #sidebyside .image-box:after {
     content: '';
     position: absolute;
@@ -71,10 +83,11 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 1;
     top: -14.125em;
     right: -6.8125em;
     z-index: -1;
+    opacity: 1;
+    animation: flickerAnimation 7s infinite ease-in-out;
   }
   #sidebyside .image-box img {
     position: absolute;
@@ -184,10 +197,11 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 1;
     top: -14.125em;
     right: -6.8125em;
     z-index: -1;
+    opacity: 1;
+    animation: flickerAnimation 7s infinite ease-in-out;
   }
   #sidebyside-reverse .image-box img {
     position: absolute;

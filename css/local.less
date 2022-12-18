@@ -69,6 +69,22 @@
                 top: 20/16em;
                 left: -20/16em;
             }
+            
+            @keyframes flickerAnimation {
+
+                /* flame pulses */
+                0% {
+                    opacity: 1;
+                }
+
+                50% {
+                    opacity: 0.4;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
 
             &:after {
                 content: '';
@@ -84,6 +100,8 @@
                 top: -226/16em;
                 right: -109/16em;
                 z-index: -1;
+                opacity: 1;
+                animation: flickerAnimation 7s infinite ease-in-out;
              }
 
             img {
@@ -214,6 +232,8 @@
                 top: -226/16em;
                 right: -109/16em;
                 z-index: -1;
+                opacity: 1;
+                animation: flickerAnimation 7s infinite ease-in-out;
              }
 
             img {
